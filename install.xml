@@ -1,0 +1,26 @@
+<modification>
+	<name>Hips Checkout</name>
+	<version>1.0</version>
+	<link>http://www.opensourcetechnologies.com/</link>
+	<author>OpenSource Technologies</author>
+	<code>Hips_Checkout_OpenCart23 - 1.0</code>
+
+	<file path="catalog/controller/common/cart.php">
+		<operation>
+			<search index="0"><![CDATA[	$data['checkout'] = $this->url->link('checkout/checkout', '', true); ]]></search>
+			<add position="after" ><![CDATA[ if($this->config->get('hips_checkout_status') && $this->cart->getTotal() >= $this->config->get('hips_total')   ){ $data['checkout'] = $this->url->link('extension/payment/hips_checkout', '', true); }	]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/common/header.php">
+		<operation>
+			<search index="0"><![CDATA[	$data['checkout'] = $this->url->link('checkout/checkout', '', true); ]]></search>
+			<add position="after" ><![CDATA[ if($this->config->get('hips_checkout_status') && $this->cart->getTotal() >= $this->config->get('hips_total') ){ $data['checkout'] = $this->url->link('extension/payment/hips_checkout', '', true); }	]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/checkout/cart.php">
+		<operation>
+			<search index="0"><![CDATA[	$data['checkout'] = $this->url->link('checkout/checkout', '', true); ]]></search>
+			<add position="after" ><![CDATA[ if($this->config->get('hips_checkout_status') && $this->cart->getTotal() >= $this->config->get('hips_total') ){ $data['checkout'] = $this->url->link('extension/payment/hips_checkout', '', true); }	]]></add>
+		</operation>
+	</file>
+</modification>
