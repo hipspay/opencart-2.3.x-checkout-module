@@ -1,3 +1,5 @@
+![Hips Logotype](https://hips.com/logo.svg)
+
 # Opencart 2.3.x setup instructions
 
 1. Download our latest Opencart 2.3.x Checkout module [here](https://github.com/hipspay/opencart-2.3.x-checkout-module/releases).
