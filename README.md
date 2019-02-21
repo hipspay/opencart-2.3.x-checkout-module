@@ -4,7 +4,7 @@
 
 1. Download our latest Opencart 2.3.x Checkout module [here](https://github.com/hipspay/opencart-2.3.x-checkout-module/releases).
 2. In your Opencart admin panel go to Extensions > Extension Installer.
-3. Upload [HIPS.OC.2.3.x.zip](https://github.com/hipspay/opencart-2.3.x-checkout-module/releases) which you downloaded in step 1.
+3. Upload [Hips_Checkout_OpenCart2.3- x.x.ocmod.zip](https://github.com/hipspay/opencart-2.3.x-checkout-module/releases) which you downloaded in step 1.
 4. If you receive an error "Could not connect as..." this means you have not configured FTP credentials for your Extension Installer. You can resolve this in System > Settings > FTP.
 5. Login to your OpenCart admin panel and go to Extensions > Payments, find Hips Checkout, and click the [Install] link. 
 6. Click the [Edit] link.
